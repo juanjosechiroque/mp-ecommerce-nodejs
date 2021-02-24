@@ -36,7 +36,9 @@ app.post('/detail', (req, res) => {
   const preference = {
     items: [
       {
+        id: 1234,
         title: req.body.productDescription,
+        description: 'Dispositivo móvil de Tienda e-commerce',
         quantity: 1,
         currency_id: 'PEN',
         picture_url: productImage, 
@@ -49,7 +51,7 @@ app.post('/detail', (req, res) => {
       email: "test_user_46542185@testuser.com",
       phone: {
         area_code: "52",
-        numer: "5549737300"        
+        number: 5549737300        
       },
       identification: {
         type: "DNI",
